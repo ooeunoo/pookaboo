@@ -35,7 +35,7 @@ class _MapFormState extends State<AppMapForm> {
   late KakaoMapController _controller;
   final GeolocatorService _geolocatorService = sl<GeolocatorService>();
 
-  final LatLng _center = Config.get.initialCenter;
+  final LatLng _center = Config.initialCenter;
   late Marker _marker;
 
   @override
@@ -55,7 +55,7 @@ class _MapFormState extends State<AppMapForm> {
             child: Stack(
               children: [
                 KakaoMap(
-                  center: Config.get.initialCenter,
+                  center: Config.initialCenter,
                   onMapCreated: ((controller) async {
                     _controller = controller;
 

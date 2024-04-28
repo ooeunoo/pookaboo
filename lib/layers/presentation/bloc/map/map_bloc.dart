@@ -203,7 +203,7 @@ class MapBloc extends Bloc<MapEvent, MapState> {
             eName: toilet.name,
             eX: tp.x,
             eY: tp.y,
-            ids: Config.get.routeIds);
+            ids: Config.routeIds);
 
         final response = await _getRoutesUseCase.call(params);
 

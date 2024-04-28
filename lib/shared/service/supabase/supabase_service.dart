@@ -36,8 +36,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class SupabaseService {
   static Future<void> init(SecureStorage localStroage) async {
     await Supabase.initialize(
-        url: Env.get.supaBaseUrl,
-        anonKey: Env.get.supaBaseAnonKey,
+        url: ENV.SUPABASE_URL,
+        anonKey: ENV.SUPABASE_ANON_KEY,
         authOptions: FlutterAuthClientOptions(localStorage: localStroage));
     // /// Initialize Firebase
     // await Firebase.initializeApp(

@@ -34,6 +34,6 @@ import 'package:pookaboo/shared/utils/logging/log.dart';
 
 class KakaoMapService {
   static Future<void> init() async {
-    AuthRepository.initialize(appKey: Env.get.kakaoJavascriptApiKey);
+    AuthRepository.initialize(appKey: ENV.KAKAO_JAVASCRIPT_API_KEY);
   }
 }

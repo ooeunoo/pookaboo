@@ -3,6 +3,7 @@ import 'package:bottom_sheet/bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:kakao_map_plugin/kakao_map_plugin.dart';
 import 'package:pookaboo/layers/data/models/toilet/custom_marker.dart';
 import 'package:pookaboo/layers/presentation/bloc/map/map_utils.dart';
@@ -15,14 +16,13 @@ import 'package:pookaboo/shared/constant/config.dart';
 import 'package:pookaboo/shared/constant/enum.dart';
 import 'package:pookaboo/shared/constant/assets.dart';
 import 'package:pookaboo/shared/extension/context.dart';
+import 'package:pookaboo/shared/service/admob/admob_service.dart';
 import 'package:pookaboo/shared/styles/dimens.dart';
 import 'package:pookaboo/shared/styles/palette.dart';
 import 'package:pookaboo/shared/utils/helper/debounce_helper.dart';
 import 'package:pookaboo/shared/utils/helper/vibration_helper.dart';
 import 'package:pookaboo/shared/widgets/common/app_chip.dart';
 import 'package:pookaboo/shared/widgets/common/app_snak_bar.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -35,6 +35,8 @@ class _MapPageState extends State<MapPage> {
   final Debouncer _debouncer = Debouncer(milliseconds: 500);
 
   bool isOpenDetailSheet = false;
+  BannerAd? _bannerAd;
+  bool _isLoaded = false;
 
   late KakaoMapController _controller;
   Marker? _myMarker;
@@ -43,6 +45,7 @@ class _MapPageState extends State<MapPage> {
 
   @override
   void initState() {
+    loadAd();
     super.initState();
   }
 
@@ -81,6 +84,24 @@ class _MapPageState extends State<MapPage> {
         });
       }
     });
+  }
+
+  void loadAd() {
+    _bannerAd = BannerAd(
+      adUnitId: AdmobService.bannerAdUnitId,
+      request: const AdRequest(),
+      size: AdSize.banner,
+      listener: BannerAdListener(
+        onAdLoaded: (ad) {
+          setState(() {
+            _isLoaded = true;
+          });
+        },
+        onAdFailedToLoad: (ad, err) {
+          ad.dispose();
+        },
+      ),
+    )..load();
   }
 
   Future<void> _clear() async {
@@ -187,7 +208,7 @@ class _MapPageState extends State<MapPage> {
             KakaoMap(
               currentLevel: Zoom.street.level,
               maxLevel: Zoom.city.index,
-              center: Config.get.initialCenter,
+              center: Config.initialCenter,
               onMapCreated: ((controller) async {
                 _controller = controller;
 
@@ -278,7 +299,7 @@ class _MapPageState extends State<MapPage> {
             if (state is! LoadedToiletNavigationState) ...{
               Positioned(
                   right: Dimens.space20,
-                  bottom: Dimens.bottomBarHeight(context) + Dimens.space24,
+                  bottom: Dimens.bottomBarHeight(context) + Dimens.space60,
                   child: InkWell(
                     splashColor: Colors.transparent,
                     onTap: () {
@@ -328,6 +349,19 @@ class _MapPageState extends State<MapPage> {
                         child: NavigationModal(
                             toilet: state.toilet, time: state.time)),
                   )),
+            },
+
+            if (_bannerAd != null) ...{
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: SafeArea(
+                  child: SizedBox(
+                    width: double.infinity,
+                    height: _bannerAd!.size.height.toDouble(),
+                    child: _isLoaded ? AdWidget(ad: _bannerAd!) : null,
+                  ),
+                ),
+              )
             }
           ],
         );

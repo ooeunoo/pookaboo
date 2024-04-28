@@ -5,7 +5,7 @@ import 'package:pookaboo/shared/utils/logging/log.dart';
 class KakaoService {
   static Future<void> init() async {
     KakaoSdk.init(
-      nativeAppKey: Env.get.kakaoNativeApiKey,
+      nativeAppKey: ENV.KAKAO_NATIVE_API_KEY,
       // javaScriptAppKey: Env.get.kakaoJavascriptApiKey,
     );
   }

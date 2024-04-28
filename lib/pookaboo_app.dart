@@ -70,7 +70,7 @@ class PookabooApp extends StatelessWidget {
                     child: child!,
                   );
                 },
-                title: Config.get.appName,
+                title: Config.appName,
                 theme: themeLight(context),
                 darkTheme: themeDark(context),
                 locale: Locale(data.type ?? "ko"),

@@ -52,7 +52,7 @@ class GeolocatorService {
     return Geolocator.getPositionStream(
         locationSettings: LocationSettings(
       accuracy: LocationAccuracy.high,
-      distanceFilter: Config.get.positionStreamDistanceFilter, // 미터
+      distanceFilter: Config.positionStreamDistanceFilter, // 미터
     ));
   }
 

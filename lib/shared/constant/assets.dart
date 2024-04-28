@@ -1,5 +1,7 @@
-class Assets {
+abstract class Assets {
   Assets._();
+
+  static const String env = ".env";
 
   static const String icLauncher = "assets/images/ic_launcher.png";
   static const String icLogo = "assets/images/ic_logo.png";
