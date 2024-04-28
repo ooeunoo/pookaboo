@@ -1,3 +1,4 @@
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,8 +20,19 @@ import 'package:pookabu/shared/localization/l10n.dart';
 import 'package:pookabu/shared/router/app_routes.dart';
 import 'package:pookabu/shared/styles/theme.dart';
 
-class PookabuApp extends StatelessWidget {
+class PookabuApp extends StatefulWidget {
   const PookabuApp({super.key});
+
+  @override
+  State<PookabuApp> createState() => _PookabuAppState();
+}
+
+class _PookabuAppState extends State<PookabuApp> {
+  @override
+  initState() {
+    super.initState();
+    initPlugin();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -82,5 +94,13 @@ class PookabuApp extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  // App Tracking Transparency
+  Future<void> initPlugin() async {
+    if (await AppTrackingTransparency.trackingAuthorizationStatus ==
+        TrackingStatus.notDetermined) {
+      await AppTrackingTransparency.requestTrackingAuthorization();
+    }
   }
 }
