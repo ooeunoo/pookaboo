@@ -5,9 +5,6 @@ abstract class Config {
 
   static String appName = "Pookaboo";
 
-  // String supabaseLoginRedirectTo = 'com.miriarea.pooakboo://login-callback/';
-  // 'io.supabase.flutterquickstart://login-callback/';
-
   static LatLng initialCenter = LatLng(37.584690, 127.046502);
 
   static String routeIds = '11277825,434235';

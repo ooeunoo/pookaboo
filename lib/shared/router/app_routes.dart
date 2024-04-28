@@ -67,11 +67,6 @@ class AppRoute {
         name: AppRoutes.splash.name,
         builder: (_, __) => const SplashPage(),
       ),
-      GoRoute(
-        path: AppRoutes.init_profile.path,
-        name: AppRoutes.init_profile.name,
-        builder: (_, __) => const SplashPage(),
-      ),
       ShellRoute(
         navigatorKey: _shellNavigatorKey,
         builder: (context, state, child) {
@@ -152,7 +147,7 @@ class AppRoute {
         ],
       ),
     ],
-    initialLocation: AppRoutes.splash.path,
+    initialLocation: AppRoutes.map.path,
     routerNeglect: true,
     // debugLogDiagnostics: kDebugMode,
     refreshListenable: RouterRefreshStream(context.read<UserBloc>().stream),
