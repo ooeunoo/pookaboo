@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/localization/generated/message.dart';
-import 'package:pookaboo/shared/widgets/common/app_color_loaders.dart';
+import 'package:pookabu/shared/localization/generated/message.dart';
+import 'package:pookabu/shared/widgets/common/app_color_loaders.dart';
 
 class AppLoading extends StatelessWidget {
   const AppLoading({super.key, this.showMessage = true});

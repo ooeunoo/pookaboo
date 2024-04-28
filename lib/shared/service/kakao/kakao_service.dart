@@ -1,6 +1,6 @@
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
-import 'package:pookaboo/shared/constant/env.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/constant/env.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 class KakaoService {
   static Future<void> init() async {

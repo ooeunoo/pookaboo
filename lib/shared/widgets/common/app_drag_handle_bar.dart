@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
 
 class AppDragHandleBar extends StatelessWidget {
   const AppDragHandleBar({super.key});

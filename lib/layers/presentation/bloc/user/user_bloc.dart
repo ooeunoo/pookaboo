@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/data/models/user/app_user.dart';
-import 'package:pookaboo/layers/domain/entities/user/create_user_inquiry_params.dart';
-import 'package:pookaboo/layers/domain/entities/user/update_user_params.dart';
-import 'package:pookaboo/layers/domain/usecases/user/user_usecase.dart';
-import 'package:pookaboo/shared/service/storage/secure_storage.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/data/models/user/app_user.dart';
+import 'package:pookabu/layers/domain/entities/user/create_user_inquiry_params.dart';
+import 'package:pookabu/layers/domain/entities/user/update_user_params.dart';
+import 'package:pookabu/layers/domain/usecases/user/user_usecase.dart';
+import 'package:pookabu/shared/service/storage/secure_storage.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 part 'user_event.dart';

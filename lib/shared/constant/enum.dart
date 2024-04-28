@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
+import 'package:pookabu/shared/constant/assets.dart';
 
 enum ToiletType {
   building,

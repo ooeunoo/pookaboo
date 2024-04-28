@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/service/image_picker/image_picker_service.dart';
+import 'package:pookabu/shared/service/image_picker/image_picker_service.dart';
 
 class ImageUploadForm extends StatefulWidget {
   const ImageUploadForm({super.key});

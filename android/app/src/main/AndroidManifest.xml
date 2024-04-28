@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.miro.pookaboo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.miro.pookabu">
 
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,7 @@
     </queries>
 
     <application
-        android:label="pookaboo"
+        android:label="pookabu"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon"
         android:usesCleartextTraffic="true">
@@ -46,7 +46,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="com.miriarea.pookaboo" android:host="oauth" />
+                <data android:scheme="com.miriarea.pookabu" android:host="oauth" />
 
                 <!-- <data android:host="kakaolink"
                     android:scheme="kakao0bcb28dbbadf43d92ed1a962f38e8df3" /> -->

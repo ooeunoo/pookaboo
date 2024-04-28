@@ -1,5 +1,5 @@
-import 'package:pookaboo/layers/domain/entities/toilet/create_toilet_params.dart';
-import 'package:pookaboo/shared/entities/form/step.dart';
+import 'package:pookabu/layers/domain/entities/toilet/create_toilet_params.dart';
+import 'package:pookabu/shared/entities/form/step.dart';
 
 class ConfirmStep implements Step {
   @override

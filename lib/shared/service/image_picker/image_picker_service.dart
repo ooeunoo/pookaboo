@@ -1,6 +1,6 @@
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 class ImagePickerService {
   final ImagePicker _picker = ImagePicker();

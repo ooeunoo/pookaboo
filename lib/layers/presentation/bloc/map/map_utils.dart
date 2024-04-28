@@ -1,7 +1,7 @@
 import 'package:kakao_map_plugin/kakao_map_plugin.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/shared/constant/enum.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/shared/constant/enum.dart';
+import 'package:pookabu/shared/styles/palette.dart';
 
 enum Zoom {
   ground(1),

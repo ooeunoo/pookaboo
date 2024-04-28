@@ -1,16 +1,16 @@
 import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/injection.dart';
-import 'package:pookaboo/layers/presentation/bloc/toilet/toilet_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/user/user_bloc.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/layers/presentation/bloc/review/review_bloc.dart';
-import 'package:pookaboo/layers/presentation/pages/map/widgets/detail_sheet/information_tab/information.dart';
-import 'package:pookaboo/layers/presentation/pages/map/widgets/detail_sheet/review_tab/review.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/injection.dart';
+import 'package:pookabu/layers/presentation/bloc/toilet/toilet_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/user/user_bloc.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/layers/presentation/bloc/review/review_bloc.dart';
+import 'package:pookabu/layers/presentation/pages/map/widgets/detail_sheet/information_tab/information.dart';
+import 'package:pookabu/layers/presentation/pages/map/widgets/detail_sheet/review_tab/review.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
 
 class DetailSheetTabBarView extends StatefulWidget {
   final Toilet toilet;

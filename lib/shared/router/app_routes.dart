@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pookaboo/injection.dart';
-import 'package:pookaboo/layers/presentation/bloc/announcement/announcement_bloc.dart';
-import 'package:pookaboo/layers/presentation/cubit/app/app_cubit.dart';
-import 'package:pookaboo/layers/presentation/pages/app.dart';
-import 'package:pookaboo/layers/presentation/bloc/user/user_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/review/review_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/visitation/visitation_bloc.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/announcement/announcement.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/edit_profile/edit_profile.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/profile.dart';
-import 'package:pookaboo/layers/presentation/pages/splash/splash.dart';
-import 'package:pookaboo/layers/presentation/pages/map/map.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/review/review.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/toilet_proposal/toilet_proposal.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/visitation/visitation.dart';
-import 'package:pookaboo/shared/router/extra_params.dart';
-import 'package:pookaboo/shared/router/router_refresh_stream.dart';
+import 'package:pookabu/injection.dart';
+import 'package:pookabu/layers/presentation/bloc/announcement/announcement_bloc.dart';
+import 'package:pookabu/layers/presentation/cubit/app/app_cubit.dart';
+import 'package:pookabu/layers/presentation/pages/app.dart';
+import 'package:pookabu/layers/presentation/bloc/user/user_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/review/review_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/visitation/visitation_bloc.dart';
+import 'package:pookabu/layers/presentation/pages/profile/announcement/announcement.dart';
+import 'package:pookabu/layers/presentation/pages/profile/edit_profile/edit_profile.dart';
+import 'package:pookabu/layers/presentation/pages/profile/profile.dart';
+import 'package:pookabu/layers/presentation/pages/splash/splash.dart';
+import 'package:pookabu/layers/presentation/pages/map/map.dart';
+import 'package:pookabu/layers/presentation/pages/profile/review/review.dart';
+import 'package:pookabu/layers/presentation/pages/profile/toilet_proposal/toilet_proposal.dart';
+import 'package:pookabu/layers/presentation/pages/profile/visitation/visitation.dart';
+import 'package:pookabu/shared/router/extra_params.dart';
+import 'package:pookabu/shared/router/router_refresh_stream.dart';
 
 enum AppRoutes {
   splash("/splash"),

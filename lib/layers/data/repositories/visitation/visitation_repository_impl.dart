@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:pookaboo/layers/data/datasources/toilet_remote_datasource.dart';
-import 'package:pookaboo/layers/data/models/visitation/visitation.dart';
-import 'package:pookaboo/layers/domain/entities/visitation/create_visitation_params.dart';
-import 'package:pookaboo/layers/domain/repositories/visitation/visitation_repository.dart';
-import 'package:pookaboo/shared/error/failure.dart';
+import 'package:pookabu/layers/data/datasources/toilet_remote_datasource.dart';
+import 'package:pookabu/layers/data/models/visitation/visitation.dart';
+import 'package:pookabu/layers/domain/entities/visitation/create_visitation_params.dart';
+import 'package:pookabu/layers/domain/repositories/visitation/visitation_repository.dart';
+import 'package:pookabu/shared/error/failure.dart';
 
 class VisitationRepositoryImpl implements VisitationRepository {
   final ToiletRemoteDatasource toiletRemoteDatasource;

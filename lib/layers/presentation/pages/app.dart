@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pookaboo/layers/presentation/cubit/app/app_cubit.dart';
-import 'package:pookaboo/layers/presentation/pages/widgets/navigation_bar_item_widget.dart';
-import 'package:pookaboo/shared/router/app_routes.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/utils/helper/vibration_helper.dart';
+import 'package:pookabu/layers/presentation/cubit/app/app_cubit.dart';
+import 'package:pookabu/layers/presentation/pages/widgets/navigation_bar_item_widget.dart';
+import 'package:pookabu/shared/router/app_routes.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/utils/helper/vibration_helper.dart';
 
 class AppPage extends StatelessWidget {
   final Widget screen;

@@ -46,7 +46,7 @@ app.*.map.json
 .env
 
 /python_scripts
-/python_scripts/pookaboo.json
+/python_scripts/pookabu.json
 /python_scripts/env/
 
 .vscode/

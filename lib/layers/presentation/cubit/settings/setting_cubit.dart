@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pookaboo/shared/service/storage/secure_storage.dart';
+import 'package:pookabu/shared/service/storage/secure_storage.dart';
 
 part 'setting_state.dart';
 part 'setting_cubit.freezed.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
 
 /// Light theme
 ThemeData themeLight(BuildContext context) => ThemeData(
@@ -111,7 +111,7 @@ ThemeData themeLight(BuildContext context) => ThemeData(
       iconTheme: const IconThemeData(color: Palette.coolGrey01),
       visualDensity: VisualDensity.adaptivePlatformDensity,
       extensions: const <ThemeExtension<dynamic>>[
-        PookabooColors(
+        PookabuColors(
           background: Palette.coolGrey12,
           card: Palette.coolGrey12,
           buttonText: Palette.coolGrey01,
@@ -241,7 +241,7 @@ ThemeData themeDark(BuildContext context) => ThemeData(
       iconTheme: const IconThemeData(color: Palette.coolGrey01),
       visualDensity: VisualDensity.adaptivePlatformDensity,
       extensions: const <ThemeExtension<dynamic>>[
-        PookabooColors(
+        PookabuColors(
           background: Palette.coolGrey12,
           card: Palette.coolGrey12,
           buttonText: Palette.coolGrey01,
@@ -265,7 +265,7 @@ ThemeData themeDark(BuildContext context) => ThemeData(
       ],
     );
 
-class PookabooColors extends ThemeExtension<PookabooColors> {
+class PookabuColors extends ThemeExtension<PookabuColors> {
   final Color? background;
   final Color? card;
   final Color? buttonText;
@@ -286,7 +286,7 @@ class PookabooColors extends ThemeExtension<PookabooColors> {
   final Color? lavender;
   final Color? red;
 
-  const PookabooColors({
+  const PookabuColors({
     this.background,
     this.card,
     this.buttonText,
@@ -309,7 +309,7 @@ class PookabooColors extends ThemeExtension<PookabooColors> {
   });
 
   @override
-  ThemeExtension<PookabooColors> copyWith({
+  ThemeExtension<PookabuColors> copyWith({
     Color? background,
     Color? card,
     Color? buttonText,
@@ -330,7 +330,7 @@ class PookabooColors extends ThemeExtension<PookabooColors> {
     Color? lavender,
     Color? red,
   }) {
-    return PookabooColors(
+    return PookabuColors(
       background: background ?? this.background,
       card: card ?? this.card,
       buttonText: buttonText ?? this.buttonText,
@@ -354,14 +354,14 @@ class PookabooColors extends ThemeExtension<PookabooColors> {
   }
 
   @override
-  ThemeExtension<PookabooColors> lerp(
-    covariant ThemeExtension<PookabooColors>? other,
+  ThemeExtension<PookabuColors> lerp(
+    covariant ThemeExtension<PookabuColors>? other,
     double t,
   ) {
-    if (other is! PookabooColors) {
+    if (other is! PookabuColors) {
       return this;
     }
-    return PookabooColors(
+    return PookabuColors(
       background: Color.lerp(background, other.background, t),
       card: Color.lerp(card, other.card, t),
       buttonText: Color.lerp(buttonText, other.buttonText, t),
@@ -410,7 +410,7 @@ class BoxShadows {
 
   BoxShadow get button => BoxShadow(
         color: Theme.of(context)
-            .extension<PookabooColors>()!
+            .extension<PookabuColors>()!
             .shadow!
             .withOpacity(0.5),
         blurRadius: 16.0,
@@ -419,7 +419,7 @@ class BoxShadows {
 
   BoxShadow get card => BoxShadow(
         color: Theme.of(context)
-            .extension<PookabooColors>()!
+            .extension<PookabuColors>()!
             .shadow!
             .withOpacity(0.5),
         blurRadius: 5.0,
@@ -427,19 +427,19 @@ class BoxShadows {
       );
 
   BoxShadow get dialog => BoxShadow(
-        color: Theme.of(context).extension<PookabooColors>()!.shadow!,
+        color: Theme.of(context).extension<PookabuColors>()!.shadow!,
         offset: const Offset(0, -4),
         blurRadius: 16.0,
       );
 
   BoxShadow get dialogAlt => BoxShadow(
-        color: Theme.of(context).extension<PookabooColors>()!.shadow!,
+        color: Theme.of(context).extension<PookabuColors>()!.shadow!,
         offset: const Offset(0, 4),
         blurRadius: 16.0,
       );
 
   BoxShadow get buttonMenu => BoxShadow(
-        color: Theme.of(context).extension<PookabooColors>()!.shadow!,
+        color: Theme.of(context).extension<PookabuColors>()!.shadow!,
         blurRadius: 4.0,
       );
 }

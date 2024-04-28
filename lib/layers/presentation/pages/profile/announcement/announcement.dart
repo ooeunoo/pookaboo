@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/data/models/announcement/announcement.dart';
-import 'package:pookaboo/layers/presentation/bloc/announcement/announcement_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/visitation/visitation_bloc.dart';
-import 'package:pookaboo/layers/presentation/pages/profile/announcement/widget/announcement_header.dart';
-import 'package:pookaboo/shared/extension/context.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
-import 'package:pookaboo/shared/widgets/common/app_divider.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/data/models/announcement/announcement.dart';
+import 'package:pookabu/layers/presentation/bloc/announcement/announcement_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/visitation/visitation_bloc.dart';
+import 'package:pookabu/layers/presentation/pages/profile/announcement/widget/announcement_header.dart';
+import 'package:pookabu/shared/extension/context.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/widgets/common/app_divider.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class AnnouncementPage extends StatefulWidget {
   const AnnouncementPage({super.key});

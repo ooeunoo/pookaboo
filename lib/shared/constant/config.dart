@@ -3,7 +3,7 @@ import 'package:kakao_map_plugin/kakao_map_plugin.dart';
 abstract class Config {
   Config._();
 
-  static String appName = "Pookaboo";
+  static String appName = "Pookabu";
 
   static LatLng initialCenter = LatLng(37.584690, 127.046502);
 

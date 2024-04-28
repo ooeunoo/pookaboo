@@ -1,9 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/data/models/announcement/announcement.dart';
+import 'package:pookabu/layers/data/models/announcement/announcement.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:pookaboo/layers/domain/usecases/announcement/announcement_usecase.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/domain/usecases/announcement/announcement_usecase.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 part 'announcement_state.dart';
 part 'announcement_event.dart';

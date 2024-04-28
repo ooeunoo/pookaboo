@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:pookaboo/layers/data/datasources/user_remote_datasource.dart';
-import 'package:pookaboo/layers/data/models/user/app_user.dart';
-import 'package:pookaboo/layers/domain/entities/user/create_user_inquiry_params.dart';
-import 'package:pookaboo/layers/domain/entities/user/update_user_params.dart';
-import 'package:pookaboo/layers/domain/repositories/user/user_repository.dart';
-import 'package:pookaboo/shared/error/failure.dart';
+import 'package:pookabu/layers/data/datasources/user_remote_datasource.dart';
+import 'package:pookabu/layers/data/models/user/app_user.dart';
+import 'package:pookabu/layers/domain/entities/user/create_user_inquiry_params.dart';
+import 'package:pookabu/layers/domain/entities/user/update_user_params.dart';
+import 'package:pookabu/layers/domain/repositories/user/user_repository.dart';
+import 'package:pookabu/shared/error/failure.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class UserRepositoryImpl implements UserRepository {

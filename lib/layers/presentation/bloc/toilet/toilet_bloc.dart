@@ -1,13 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/domain/entities/toilet/create_toilet_params.dart';
+import 'package:pookabu/layers/domain/entities/toilet/create_toilet_params.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:pookaboo/layers/domain/entities/toilet/update_toilet_main_image_params.dart';
-import 'package:pookaboo/layers/domain/entities/toilet/upload_toilet_images_params.dart';
-import 'package:pookaboo/layers/domain/usecases/toilet/toilet_usecase.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/domain/entities/toilet/update_toilet_main_image_params.dart';
+import 'package:pookabu/layers/domain/entities/toilet/upload_toilet_images_params.dart';
+import 'package:pookabu/layers/domain/usecases/toilet/toilet_usecase.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 part 'toilet_state.dart';

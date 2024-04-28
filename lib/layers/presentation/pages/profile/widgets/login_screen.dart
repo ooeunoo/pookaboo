@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:pookaboo/layers/presentation/bloc/user/user_bloc.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
-import 'package:pookaboo/shared/localization/generated/message.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/widgets/common/app_button.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/presentation/bloc/user/user_bloc.dart';
+import 'package:pookabu/shared/constant/assets.dart';
+import 'package:pookabu/shared/localization/generated/message.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/widgets/common/app_button.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({super.key});

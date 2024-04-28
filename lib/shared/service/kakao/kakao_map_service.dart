@@ -1,8 +1,8 @@
 import 'dart:isolate';
 
 import 'package:kakao_map_plugin/kakao_map_plugin.dart';
-import 'package:pookaboo/shared/constant/env.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/constant/env.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 ///[AndroidManifest.xml]
 /********************************* 

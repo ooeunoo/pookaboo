@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:pookaboo/layers/data/models/review/review.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/utils/helper/time_helper.dart';
-import 'package:pookaboo/shared/widgets/app_rating_row.dart';
-import 'package:pookaboo/shared/widgets/common/app_divider.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/data/models/review/review.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/utils/helper/time_helper.dart';
+import 'package:pookabu/shared/widgets/app_rating_row.dart';
+import 'package:pookabu/shared/widgets/common/app_divider.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class AppReviewCard extends StatefulWidget {
   final Review review;

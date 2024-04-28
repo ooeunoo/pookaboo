@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_h.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class AppRatingRow extends StatefulWidget {
   final Rating rating;

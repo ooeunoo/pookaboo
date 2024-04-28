@@ -5,7 +5,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'dart:convert';
 
-import 'package:pookaboo/layers/data/models/coord/coord.dart';
+import 'package:pookabu/layers/data/models/coord/coord.dart';
 
 part 'route.freezed.dart';
 part 'route.g.dart';

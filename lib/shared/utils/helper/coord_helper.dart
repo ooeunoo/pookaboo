@@ -2,7 +2,7 @@
 
 import 'dart:math';
 
-import 'package:pookaboo/layers/data/models/coord/coord.dart';
+import 'package:pookabu/layers/data/models/coord/coord.dart';
 
 class CoordConv {
   late double m_dx = 0;

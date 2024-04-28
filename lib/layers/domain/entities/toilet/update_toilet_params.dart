@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kakao_map_plugin/kakao_map_plugin.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
 
 part 'update_toilet_params.freezed.dart';
 part 'update_toilet_params.g.dart';

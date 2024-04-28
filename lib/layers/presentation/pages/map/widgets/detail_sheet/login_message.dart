@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pookaboo/layers/presentation/cubit/app/app_cubit.dart';
-import 'package:pookaboo/shared/constant/enum.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/presentation/cubit/app/app_cubit.dart';
+import 'package:pookabu/shared/constant/enum.dart';
+import 'package:pookabu/shared/constant/assets.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class LogInMessage extends StatelessWidget {
   const LogInMessage({super.key});

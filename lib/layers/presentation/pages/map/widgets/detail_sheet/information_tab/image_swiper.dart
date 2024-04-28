@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/layers/domain/entities/toilet/update_toilet_main_image_params.dart';
-import 'package:pookaboo/layers/presentation/bloc/toilet/toilet_bloc.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
-import 'package:pookaboo/shared/extension/context.dart';
-import 'package:pookaboo/shared/extension/string.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/layers/domain/entities/toilet/update_toilet_main_image_params.dart';
+import 'package:pookabu/layers/presentation/bloc/toilet/toilet_bloc.dart';
+import 'package:pookabu/shared/constant/assets.dart';
+import 'package:pookabu/shared/extension/context.dart';
+import 'package:pookabu/shared/extension/string.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 class ImageSwiper extends StatefulWidget {
   final Toilet toilet;

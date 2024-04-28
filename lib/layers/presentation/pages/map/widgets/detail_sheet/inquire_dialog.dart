@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/shared/extension/context.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/widgets/common/app_button.dart';
-import 'package:pookaboo/shared/widgets/common/app_snak_bar.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
-import 'package:pookaboo/shared/widgets/common/app_text_input.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/shared/extension/context.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/widgets/common/app_button.dart';
+import 'package:pookabu/shared/widgets/common/app_snak_bar.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_h.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
+import 'package:pookabu/shared/widgets/common/app_text_input.dart';
 
 class InquireDialog extends StatefulWidget {
   final Toilet toilet;

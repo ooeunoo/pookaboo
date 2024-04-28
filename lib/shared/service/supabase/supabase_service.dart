@@ -1,5 +1,5 @@
-import 'package:pookaboo/shared/constant/env.dart';
-import 'package:pookaboo/shared/service/storage/secure_storage.dart';
+import 'package:pookabu/shared/constant/env.dart';
+import 'package:pookabu/shared/service/storage/secure_storage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 ///[AndroidManifest.xml]

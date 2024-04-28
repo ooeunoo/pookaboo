@@ -4,23 +4,23 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:oktoast/oktoast.dart';
-import 'package:pookaboo/injection.dart';
-import 'package:pookaboo/layers/presentation/bloc/announcement/announcement_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/toilet/toilet_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/user/user_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/map/map_bloc.dart';
-import 'package:pookaboo/layers/presentation/cubit/settings/setting_cubit.dart';
-import 'package:pookaboo/layers/presentation/bloc/review/review_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/visitation/visitation_bloc.dart';
-import 'package:pookaboo/layers/presentation/bloc/profile/profile_bloc.dart';
-import 'package:pookaboo/shared/constant/config.dart';
-import 'package:pookaboo/shared/localization/generated/message.dart';
-import 'package:pookaboo/shared/localization/l10n.dart';
-import 'package:pookaboo/shared/router/app_routes.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
+import 'package:pookabu/injection.dart';
+import 'package:pookabu/layers/presentation/bloc/announcement/announcement_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/toilet/toilet_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/user/user_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/map/map_bloc.dart';
+import 'package:pookabu/layers/presentation/cubit/settings/setting_cubit.dart';
+import 'package:pookabu/layers/presentation/bloc/review/review_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/visitation/visitation_bloc.dart';
+import 'package:pookabu/layers/presentation/bloc/profile/profile_bloc.dart';
+import 'package:pookabu/shared/constant/config.dart';
+import 'package:pookabu/shared/localization/generated/message.dart';
+import 'package:pookabu/shared/localization/l10n.dart';
+import 'package:pookabu/shared/router/app_routes.dart';
+import 'package:pookabu/shared/styles/theme.dart';
 
-class PookabooApp extends StatelessWidget {
-  const PookabooApp({super.key});
+class PookabuApp extends StatelessWidget {
+  const PookabuApp({super.key});
 
   @override
   Widget build(BuildContext context) {

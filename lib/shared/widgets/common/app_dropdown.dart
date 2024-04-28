@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/theme.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
 
 class AppDropDown<T> extends StatefulWidget {
   const AppDropDown(
@@ -114,19 +114,20 @@ class _AppDropDownState<T> extends State<AppDropDown<T>> {
                       borderSide:
                           BorderSide(color: Theme.of(context).cardColor),
                     ),
-                    errorStyle:
-                        Theme.of(context).textTheme.labelSmall?.copyWith(
-                              color: Theme.of(context)
-                                  .extension<PookabooColors>()!
-                                  .red,
-                            ),
+                    errorStyle: Theme.of(context)
+                        .textTheme
+                        .labelSmall
+                        ?.copyWith(
+                          color:
+                              Theme.of(context).extension<PookabuColors>()!.red,
+                        ),
                     focusedErrorBorder: OutlineInputBorder(
                       gapPadding: 0,
                       borderRadius: BorderRadius.circular(Dimens.space12),
                       borderSide: const BorderSide(color: Palette.coolGrey05),
                       // borderSide: BorderSide(
                       //   color:
-                      //       Theme.of(context).extension<PookabooColors>()!.red!,
+                      //       Theme.of(context).extension<PookabuColors>()!.red!,
                       // ),
                     ),
                     errorBorder: OutlineInputBorder(
@@ -135,7 +136,7 @@ class _AppDropDownState<T> extends State<AppDropDown<T>> {
                       borderSide: const BorderSide(color: Palette.coolGrey05),
                       // borderSide: BorderSide(
                       //   color:
-                      //       Theme.of(context).extension<PookabooColors>()!.red!,
+                      //       Theme.of(context).extension<PookabuColors>()!.red!,
                       // ),
                     ),
                     focusedBorder: OutlineInputBorder(
@@ -144,7 +145,7 @@ class _AppDropDownState<T> extends State<AppDropDown<T>> {
                       borderSide: const BorderSide(color: Palette.coolGrey05),
                       // borderSide: BorderSide(
                       //   color:
-                      //       Theme.of(context).extension<PookabooColors>()!.pink!,
+                      //       Theme.of(context).extension<PookabuColors>()!.pink!,
                       // ),
                     ),
                   ),

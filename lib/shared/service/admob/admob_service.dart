@@ -3,7 +3,7 @@
 import 'dart:ffi';
 import 'dart:io';
 
-import 'package:pookaboo/shared/constant/env.dart';
+import 'package:pookabu/shared/constant/env.dart';
 
 class AdmobService {
   static bool isProduction = ENV.POOKABOO_ENV == production;

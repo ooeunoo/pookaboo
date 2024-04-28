@@ -1,13 +1,13 @@
 import 'package:dartz/dartz.dart';
-import 'package:pookaboo/layers/data/models/user/app_user.dart';
-import 'package:pookaboo/layers/domain/entities/review/create_review_params.dart';
-import 'package:pookaboo/layers/domain/entities/user/create_user_inquiry_params.dart';
-import 'package:pookaboo/layers/domain/entities/user/update_user_params.dart';
-import 'package:pookaboo/layers/domain/repositories/user/user_repository.dart';
+import 'package:pookabu/layers/data/models/user/app_user.dart';
+import 'package:pookabu/layers/domain/entities/review/create_review_params.dart';
+import 'package:pookabu/layers/domain/entities/user/create_user_inquiry_params.dart';
+import 'package:pookabu/layers/domain/entities/user/update_user_params.dart';
+import 'package:pookabu/layers/domain/repositories/user/user_repository.dart';
 import 'package:injectable/injectable.dart';
-import 'package:pookaboo/shared/constant/enum.dart';
-import 'package:pookaboo/shared/error/failure.dart';
-import 'package:pookaboo/shared/usecase/usecase.dart';
+import 'package:pookabu/shared/constant/enum.dart';
+import 'package:pookabu/shared/error/failure.dart';
+import 'package:pookabu/shared/usecase/usecase.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class UserUseCase {

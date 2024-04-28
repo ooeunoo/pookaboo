@@ -1,11 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pookaboo/layers/data/models/visitation/visitation.dart';
-import 'package:pookaboo/layers/domain/entities/visitation/create_visitation_params.dart';
+import 'package:pookabu/layers/data/models/visitation/visitation.dart';
+import 'package:pookabu/layers/domain/entities/visitation/create_visitation_params.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:pookaboo/layers/domain/usecases/visitation/visitation_usecase.dart';
-import 'package:pookaboo/shared/utils/helper/time_helper.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/domain/usecases/visitation/visitation_usecase.dart';
+import 'package:pookabu/shared/utils/helper/time_helper.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 part 'visitation_state.dart';
 part 'visitation_event.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:oktoast/oktoast.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
-import 'package:pookaboo/shared/widgets/common/app_toast.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/theme.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/widgets/common/app_toast.dart';
 
 extension StringExtension on String {
   bool isValidEmail() {

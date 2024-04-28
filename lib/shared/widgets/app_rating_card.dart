@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/constant/enum.dart';
-import 'package:pookaboo/shared/extension/context.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/shared/constant/enum.dart';
+import 'package:pookabu/shared/extension/context.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_h.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class AppRatingCard extends StatelessWidget {
   final String name;

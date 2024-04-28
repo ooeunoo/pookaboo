@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import "package:flutter/material.dart";
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/theme.dart';
 
 class AppColorLoader extends StatefulWidget {
   final double radius;

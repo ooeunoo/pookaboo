@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
-import 'package:pookaboo/shared/extension/context.dart';
-import 'package:pookaboo/shared/router/app_routes.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
+import 'package:pookabu/shared/constant/assets.dart';
+import 'package:pookabu/shared/extension/context.dart';
+import 'package:pookabu/shared/router/app_routes.dart';
+import 'package:pookabu/shared/styles/palette.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});

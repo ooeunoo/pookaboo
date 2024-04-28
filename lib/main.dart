@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:pookaboo/injection.dart';
-import 'package:pookaboo/pookaboo_app.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
+import 'package:pookabu/injection.dart';
+import 'package:pookabu/pookabu_app.dart';
+import 'package:pookabu/shared/constant/assets.dart';
 
 void main() {
   runZonedGuarded(
@@ -25,7 +25,7 @@ void main() {
           DeviceOrientation.portraitUp,
           DeviceOrientation.portraitDown,
         ],
-      ).then((_) => runApp(const PookabooApp()));
+      ).then((_) => runApp(const PookabuApp()));
     },
     (error, stackTrace) async {
       print('error: $error, stackTrace: $stackTrace');

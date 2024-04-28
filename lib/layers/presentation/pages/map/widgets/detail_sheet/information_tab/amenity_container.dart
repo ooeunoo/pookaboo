@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_h.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class AmenityContainer extends StatelessWidget {
   final List<Map<String, dynamic>> amenities;

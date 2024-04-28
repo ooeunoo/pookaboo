@@ -1,7 +1,7 @@
 import 'package:kakao_map_plugin/kakao_map_plugin.dart';
-import 'package:pookaboo/layers/domain/entities/toilet/create_toilet_params.dart';
-import 'package:pookaboo/shared/entities/form/step.dart';
-import 'package:pookaboo/shared/entities/form/step_result.dart';
+import 'package:pookabu/layers/domain/entities/toilet/create_toilet_params.dart';
+import 'package:pookabu/shared/entities/form/step.dart';
+import 'package:pookabu/shared/entities/form/step_result.dart';
 
 class MapStep implements Step {
   @override

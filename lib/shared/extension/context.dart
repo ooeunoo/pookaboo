@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
-import 'package:pookaboo/shared/widgets/common/app_loading.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/theme.dart';
+import 'package:pookabu/shared/widgets/common/app_loading.dart';
 
 extension ContextExtensions on BuildContext {
   bool isMobile() {

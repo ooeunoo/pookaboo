@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pookaboo/layers/data/models/user/app_user.dart';
+import 'package:pookabu/layers/data/models/user/app_user.dart';
 
 part 'update_user_params.freezed.dart';
 part 'update_user_params.g.dart';

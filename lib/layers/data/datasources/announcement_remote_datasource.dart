@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:pookaboo/layers/data/models/announcement/announcement.dart';
-import 'package:pookaboo/shared/error/failure.dart';
-import 'package:pookaboo/shared/service/supabase/supabase_service.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/layers/data/models/announcement/announcement.dart';
+import 'package:pookabu/shared/error/failure.dart';
+import 'package:pookabu/shared/service/supabase/supabase_service.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 enum AnnouncementTable {
   announcement('announcement'),

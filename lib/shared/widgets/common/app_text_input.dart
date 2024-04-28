@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/styles/theme.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/styles/theme.dart';
 
 class AppTextInput extends StatefulWidget {
   const AppTextInput(
@@ -169,7 +169,7 @@ class _TextFState extends State<AppTextInput> {
                   ),
                   errorStyle: Theme.of(context).textTheme.labelSmall?.copyWith(
                         color:
-                            Theme.of(context).extension<PookabooColors>()!.red,
+                            Theme.of(context).extension<PookabuColors>()!.red,
                       ),
                   focusedErrorBorder: OutlineInputBorder(
                     gapPadding: 0,
@@ -177,7 +177,7 @@ class _TextFState extends State<AppTextInput> {
                     borderSide: const BorderSide(color: Palette.coolGrey05),
                     // borderSide: BorderSide(
                     //   color:
-                    //       Theme.of(context).extension<PookabooColors>()!.red!,
+                    //       Theme.of(context).extension<PookabuColors>()!.red!,
                     // ),
                   ),
                   errorBorder: OutlineInputBorder(
@@ -186,7 +186,7 @@ class _TextFState extends State<AppTextInput> {
                     borderSide: const BorderSide(color: Palette.coolGrey05),
                     // borderSide: BorderSide(
                     //   color:
-                    //       Theme.of(context).extension<PookabooColors>()!.red!,
+                    //       Theme.of(context).extension<PookabuColors>()!.red!,
                     // ),
                   ),
                   focusedBorder: OutlineInputBorder(
@@ -195,7 +195,7 @@ class _TextFState extends State<AppTextInput> {
                     borderSide: const BorderSide(color: Palette.coolGrey05),
                     // borderSide: BorderSide(
                     //   color:
-                    //       Theme.of(context).extension<PookabooColors>()!.pink!,
+                    //       Theme.of(context).extension<PookabuColors>()!.pink!,
                     // ),
                   ),
                 ),

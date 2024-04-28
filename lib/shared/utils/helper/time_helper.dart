@@ -1,5 +1,5 @@
 import 'package:intl/intl.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
 
 Map<String, String> getCurrentDayAndTime() {
   DateTime now = DateTime.now();

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:pookaboo/shared/constant/config.dart';
+import 'package:pookabu/shared/constant/config.dart';
 
 ///[gradle.properties]
 /******************************** 

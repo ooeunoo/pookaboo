@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
-import 'package:pookaboo/shared/constant/enum.dart';
-import 'package:pookaboo/shared/constant/assets.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
-import 'package:pookaboo/shared/styles/palette.dart';
-import 'package:pookaboo/shared/utils/helper/time_helper.dart';
-import 'package:pookaboo/shared/utils/logging/log.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_h.dart';
-import 'package:pookaboo/shared/widgets/common/app_spacer_v.dart';
-import 'package:pookaboo/shared/widgets/common/app_text.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/shared/constant/enum.dart';
+import 'package:pookabu/shared/constant/assets.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/palette.dart';
+import 'package:pookabu/shared/utils/helper/time_helper.dart';
+import 'package:pookabu/shared/utils/logging/log.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_h.dart';
+import 'package:pookabu/shared/widgets/common/app_spacer_v.dart';
+import 'package:pookabu/shared/widgets/common/app_text.dart';
 
 class DetailSheetProperty extends StatefulWidget {
   final Toilet toilet;

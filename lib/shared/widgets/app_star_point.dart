@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pookaboo/shared/styles/dimens.dart';
+import 'package:pookabu/shared/styles/dimens.dart';
 
 class AppStarScore extends StatefulWidget {
   final void Function(int rating) onChange;

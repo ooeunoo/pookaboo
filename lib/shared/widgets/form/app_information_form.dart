@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart' hide Step;
-import 'package:pookaboo/shared/entities/form/information_step.dart';
-import 'package:pookaboo/shared/entities/form/step_result.dart';
-import 'package:pookaboo/shared/widgets/form/material/form_container.dart';
-import 'package:pookaboo/shared/widgets/form/material/form_button.dart';
-import 'package:pookaboo/shared/widgets/form/material/form_header.dart';
+import 'package:pookabu/shared/entities/form/information_step.dart';
+import 'package:pookabu/shared/entities/form/step_result.dart';
+import 'package:pookabu/shared/widgets/form/material/form_container.dart';
+import 'package:pookabu/shared/widgets/form/material/form_button.dart';
+import 'package:pookabu/shared/widgets/form/material/form_header.dart';
 
 class AppInformationForm extends StatelessWidget {
   final InformationStep step;

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:pookaboo/shared/error/failure.dart';
+import 'package:pookabu/shared/error/failure.dart';
 
 abstract class UseCase<Type, Params> {
   Future<Either<Failure, Type>> call(Params params);

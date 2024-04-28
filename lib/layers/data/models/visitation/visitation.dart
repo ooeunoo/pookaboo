@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pookaboo/layers/data/models/user/app_user.dart';
-import 'package:pookaboo/layers/data/models/toilet/toilet.dart';
+import 'package:pookabu/layers/data/models/user/app_user.dart';
+import 'package:pookabu/layers/data/models/toilet/toilet.dart';
 
 part 'visitation.freezed.dart';
 part 'visitation.g.dart';

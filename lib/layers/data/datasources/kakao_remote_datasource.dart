@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:pookaboo/layers/data/models/coord/coord.dart';
-import 'package:pookaboo/layers/data/models/route/route.dart';
-import 'package:pookaboo/shared/constant/api.dart';
-import 'package:pookaboo/shared/error/failure.dart';
-import 'package:pookaboo/shared/utils/helper/coord_helper.dart';
-import 'package:pookaboo/shared/utils/helper/time_helper.dart';
+import 'package:pookabu/layers/data/models/coord/coord.dart';
+import 'package:pookabu/layers/data/models/route/route.dart';
+import 'package:pookabu/shared/constant/api.dart';
+import 'package:pookabu/shared/error/failure.dart';
+import 'package:pookabu/shared/utils/helper/coord_helper.dart';
+import 'package:pookabu/shared/utils/helper/time_helper.dart';
 
 abstract class KakaoRemoteDatasource {
   Future<Either<Failure, GetRouteFormatResponse>> getRoutes(
