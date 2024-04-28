@@ -1,12 +1,11 @@
 // ignore_for_file: non_constant_identifier_names
 
-import 'dart:ffi';
 import 'dart:io';
 
 import 'package:pookabu/shared/constant/env.dart';
 
 class AdmobService {
-  static bool isProduction = ENV.POOKABOO_ENV == production;
+  static bool isProduction = ENV.POOKABU_ENV == production;
 
   static String get bannerAdUnitId {
     if (Platform.isAndroid) {

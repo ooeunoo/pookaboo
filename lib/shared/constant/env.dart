@@ -7,7 +7,7 @@ String production = 'production';
 abstract class ENV {
   ENV._();
 
-  static String POOKABOO_ENV = dotenv.env['POOKABOO_ENV'] as String;
+  static String POOKABU_ENV = dotenv.env['POOKABU_ENV'] as String;
 
   static String KAKAO_JAVASCRIPT_API_KEY =
       dotenv.env['KAKAO_JAVASCRIPT_API_KEY'] as String;
