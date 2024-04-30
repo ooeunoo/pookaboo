@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:dartz/dartz.dart';
 import 'package:pookabu/layers/data/models/review/review.dart';
 import 'package:pookabu/layers/data/models/toilet/toilet.dart';

@@ -354,12 +354,10 @@ class _MapPageState extends State<MapPage> {
             if (_bannerAd != null) ...{
               Align(
                 alignment: Alignment.bottomCenter,
-                child: SafeArea(
-                  child: SizedBox(
-                    width: double.infinity,
-                    height: _bannerAd!.size.height.toDouble(),
-                    child: _isLoaded ? AdWidget(ad: _bannerAd!) : null,
-                  ),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: _bannerAd!.size.height.toDouble(),
+                  child: _isLoaded ? AdWidget(ad: _bannerAd!) : null,
                 ),
               )
             }

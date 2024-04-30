@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:oktoast/oktoast.dart';
 import 'package:pookabu/injection.dart';
 import 'package:pookabu/layers/presentation/bloc/announcement/announcement_bloc.dart';
 import 'package:pookabu/layers/presentation/bloc/toilet/toilet_bloc.dart';
@@ -53,45 +52,43 @@ class _PookabuAppState extends State<PookabuApp> {
         BlocProvider(create: (_) => sl<ToiletBloc>()),
         BlocProvider(create: (_) => sl<AnnouncementBloc>())
       ],
-      child: OKToast(
-        child: ScreenUtilInit(
-          designSize: const Size(375, 812),
-          minTextAdapt: true,
-          splitScreenMode: true,
-          builder: (context, __) {
-            AppRoute.setStream(context);
+      child: ScreenUtilInit(
+        designSize: const Size(375, 812),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, __) {
+          AppRoute.setStream(context);
 
-            return BlocBuilder<SettingsCubit, SettingState>(
-              builder: (_, data) => MaterialApp.router(
-                routerConfig: AppRoute.router,
-                localizationsDelegates: const [
-                  Messages.delegate,
-                  GlobalMaterialLocalizations.delegate,
-                  GlobalWidgetsLocalizations.delegate,
-                  GlobalCupertinoLocalizations.delegate,
-                ],
-                debugShowCheckedModeBanner: false,
-                builder: (BuildContext context, Widget? child) {
-                  final MediaQueryData data = MediaQuery.of(context);
+          return BlocBuilder<SettingsCubit, SettingState>(
+            builder: (_, data) => MaterialApp.router(
+              routerConfig: AppRoute.router,
+              localizationsDelegates: const [
+                Messages.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+              ],
+              debugShowCheckedModeBanner: false,
+              builder: (BuildContext context, Widget? child) {
+                final MediaQueryData data = MediaQuery.of(context);
 
-                  return MediaQuery(
-                    data: data.copyWith(
-                      alwaysUse24HourFormat: true,
-                      textScaler: const TextScaler.linear(1),
-                    ),
-                    child: child!,
-                  );
-                },
-                title: Config.appName,
-                theme: themeLight(context),
-                darkTheme: themeDark(context),
-                locale: Locale(data.type ?? "ko"),
-                supportedLocales: L10n.all,
-                themeMode: data.activeTheme.mode,
-              ),
-            );
-          },
-        ),
+                return MediaQuery(
+                  data: data.copyWith(
+                    alwaysUse24HourFormat: true,
+                    textScaler: const TextScaler.linear(1),
+                  ),
+                  child: child!,
+                );
+              },
+              title: Config.appName,
+              theme: themeLight(context),
+              darkTheme: themeDark(context),
+              locale: Locale(data.type ?? "ko"),
+              supportedLocales: L10n.all,
+              themeMode: data.activeTheme.mode,
+            ),
+          );
+        },
       ),
     );
   }

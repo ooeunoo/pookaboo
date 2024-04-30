@@ -56,7 +56,7 @@ class _AppReviewCardState extends State<AppReviewCard> {
         Row(
           children: [
             AppText(
-                "${widget.review.user!.nickname ?? widget.review.user!.name}﹒${parseAndFormatDateTime(widget.review.created_at)}",
+                "${widget.review.user?.nickname ?? widget.review.user?.name}﹒${parseAndFormatDateTime(widget.review.created_at)}",
                 style: Theme.of(context).textTheme.labelMedium!),
           ],
         ),
